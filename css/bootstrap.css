@@ -34,9 +34,14 @@ audio:not([controls]) {
 }
 
 html {
-  font-size: 100%;
+ /* font-size: 100%;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%; */
+        width: 990px; 
+  margin: auto;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
+  overflow: scroll;
+  line-height: 1.5;
 }
 
 a:focus {
