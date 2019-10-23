@@ -229,7 +229,7 @@ a:hover {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 100%; /*width: 940px; */
 }
 
 .span12 {
@@ -4147,15 +4147,82 @@ input[type="submit"].btn.btn-mini {
   background-color: transparent;
 }
 
+
+
+#navbar {
+  display: auto;
+  background-color: #edeeef;
+  border-radius: 5px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+#navbar ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar li {
+  border-radius: 5px;
+  width: 135px;
+  padding: 10px 1px 10px 1.2px; 
+  display: inline;
+  margin-right: 1px;
+  margin-left: 1px;
+  float: left;
+}
+
+#navbar a {
+  margin: 0px auto 0px auto;
+  width: 100%;
+  color: black;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+#navbar li:hover {
+  background-color: #caccce;
+}
+
+.active {
+  background-color: #caccce;
+}
+
+li>a {
+  font-size: 1.3em;
+  margin: 0px 15px 0px 15px;
+  padding: 0px 0px 0px 0px;
+  float: left;
+  text-align: center;
+  
+}
+
+.pics {
+  width: 100%;
+  float: left;
+}
+
+#bio-bottom {
+  clear: both;
+  margin-top: 10px;
+}
+
+
+
 .navbar {
-  *position: relative;
-  *z-index: 2;
+  display: auto;
+  border-radius: 5px;
+ /* *position: relative;
+  *z-index: 2; */
   margin-bottom: 20px;
   overflow: visible;
   color: #777777;
 }
 
 .navbar-inner {
+  display: auto;
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
@@ -4340,6 +4407,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-fixed-top .navbar-inner,
 .navbar-fixed-bottom .navbar-inner {
+  margin: 0px auto 0px auto;
   padding-right: 0;
   padding-left: 0;
   -webkit-border-radius: 0;
@@ -4350,48 +4418,57 @@ input[type="submit"].btn.btn-mini {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
+  margin: 0px auto 0px auto;
   width: 940px;
 }
 
 .navbar-fixed-top {
+  margin: 0px auto 0px auto;
   top: 0;
 }
 
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
+  margin: 0px auto 0px auto;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
      -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-fixed-bottom {
+  margin: 0px auto 0px auto;
   bottom: 0;
 }
 
 .navbar-fixed-bottom .navbar-inner {
+  margin: 0px auto 0px auto;
   -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
      -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav {
+  display: auto;
+  margin: 0px auto 0px auto;
   position: relative;
-  left: 0;
-  display: block;
+  /*left: 0; */
+  /*display: block;*/
   float: left;
-  margin: 0 10px 0 0;
+  
 }
 
 .navbar .nav.pull-right {
   float: right;
-  margin-right: 0;
+  margin: 0px auto 0px auto;
 }
 
 .navbar .nav > li {
+  margin: 0px auto 0px auto;
   float: left;
 }
 
 .navbar .nav > li > a {
+  margin: 0px auto 0px auto;
   float: none;
   padding: 10px 15px 10px;
   color: #777777;
