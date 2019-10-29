@@ -13,6 +13,8 @@ html {
 }
 
 body {
+	text-align: justify;
+
 	/*background-image: mintcreamurl("background.jpg");*/
 	/*background-color: snow;*/
 }
@@ -176,6 +178,7 @@ li>a {
 .bio-body {
 	font-size: 1.2em;
 	padding: 10px ;
+
 }
 
 
@@ -189,6 +192,7 @@ li>a {
 ol>li {
 	padding: 10px;
 	font-size: 1.1em;
+
 }
 
 
