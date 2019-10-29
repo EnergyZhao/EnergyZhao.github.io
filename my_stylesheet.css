@@ -220,9 +220,11 @@ ol>li {
 #copyright{
 	padding: 10px 10px 10px 10px;
 	text-align: right; 
-	font-size: 1.2em;
+	font-size: 0.5em;
 	background-color: white;
 	margin: -5px -20px -5px -20px;
+	color:gray;
+
 }
 
 /* Research tab */
