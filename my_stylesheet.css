@@ -39,7 +39,7 @@ body {
 #navbar li {
 	border-radius: 5px;
 	width: 135px;
-	padding: 10px 12.5px 10px 12.5px; 
+	padding: 10px 1px 10px 1.2px; 
 	display: inline;
 	margin-right: 1px;
 	margin-left: 1px;
@@ -196,6 +196,8 @@ ol>li {
 }
 
 
+
+
 .edu-row {
 	padding: 10px 0px 10px 0px;
 }
@@ -244,4 +246,23 @@ ol>li {
 .indented {
 	padding-left: 30pt; 
 	padding-right: 30pt;
+}
+
+.pdflink
+{ margin: -10px 0px -10px 0px;
+	
+	
+	text-decoration: none;
+}
+
+.densep
+{ margin: 10px 0px 0px 0px;
+	
+	
+	text-decoration: none;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
 }
