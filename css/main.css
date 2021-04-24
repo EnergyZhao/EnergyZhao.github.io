@@ -314,8 +314,8 @@ pre {
 
 .footer-text {
   border-top: 1px solid #e7e7e7;
-  text-align: center;
-  font-size: 0.8rem;
+  text-align: right;
+  font-size: 8px;
   padding: 12px 0; }
 
 /**
