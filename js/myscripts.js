@@ -25,7 +25,7 @@ document.getElementById("myFooter").innerHTML =
 	+"target='_blank'>Department of Mechanical Engineering</a></li>"
 	+"<li>Cullen College of Engineering</li>"
 	+"<li>University of Houston</li>"
-	+"<li>Office: To be announced.</li>"
+	+"<li>Office: to be announced</li>"
 	+"<li>Email: bzhao8-at-uh-dot-edu</li>"
 	+"</ul>"
 	+"</div>"
