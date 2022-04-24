@@ -669,7 +669,7 @@ hr.dividing-line{
 
 .collapsible {
   color: black;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
   cursor: pointer;
   padding: 10px;
   width: 100%;
@@ -680,7 +680,7 @@ hr.dividing-line{
 }
 
 .collapsible-active, .collapsible:hover {
-  background-color: #f1f1f1;
+  background-color: #e7e7e7;
 }
 
 .content {
@@ -688,5 +688,5 @@ hr.dividing-line{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #f7f7f7;
 }
