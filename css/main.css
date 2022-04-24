@@ -263,9 +263,9 @@ pre {
       margin-left: -2%; } }
 
 .uh-logo {
-  height: 30px;
+  height: 50px;
   float: right;
-  margin-top: 30px;}
+  margin-top: 20px;}
   @media screen and (max-width: 800px) {
     .uh-logo {
       display: none; } }
@@ -294,7 +294,6 @@ pre {
  */
 .site-footer {
   border-top: 1px solid #e7e7e7;
-  font-size: 14px;
   padding: 24px 0; }
 
 .footer-heading {
@@ -315,8 +314,8 @@ pre {
 
 .footer-text {
   border-top: 1px solid #e7e7e7;
-  text-align: right;
-  font-size: 8px;
+  text-align: center;
+  font-size: 0.8rem;
   padding: 12px 0; }
 
 /**
@@ -666,4 +665,28 @@ hr.dividing-line{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.collapsible {
+  color: black;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.collapsible-active, .collapsible:hover {
+  background-color: #f1f1f1;
+}
+
+.content {
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
