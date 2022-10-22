@@ -690,4 +690,5 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f7f7f7;
+  text-align: justify;
 }
