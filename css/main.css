@@ -389,6 +389,13 @@
    max-width: 100%;
    border: 1px solid #ddd;
    border-radius: 1px; }
+
+ .member-photo {
+   width: 150px;
+   height: 185px;
+   max-width: none;
+   object-fit: cover;
+   object-position: center 20%; }
    @media screen and (max-width: 800px) {
      .profile-picture {
        display: block;
