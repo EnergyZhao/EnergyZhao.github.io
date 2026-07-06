@@ -26,15 +26,17 @@ Plain static HTML + CSS + JS. No Jekyll / Hugo / build step.
 
 ### 1. Add a news item (index.html)
 
-News lives in a `<table>` starting around **line 189** of `index.html`, newest at top.
-Each item is a single `<tr>`:
+News lives in `<table class="news-table">` (search for it in `index.html`), newest at top.
+Each item is a single `<tr>` (since the 2026-07 redesign, classes replace inline styles):
 
 ```html
 <tr>
-    <td style="width: 100px; vertical-align: top; padding: 2px 5px;">MM/DD/YYYY:</td>
-    <td style="vertical-align: top; padding: 2px 5px;"> News text here.</td>
+    <td class="news-date">MM/DD/YYYY:</td>
+    <td class="news-text"> News text here.</td>
 </tr>
 ```
+
+Rows whose text contains `<b>...</b>` automatically get a UH-red accent bar via CSS `:has()` — no extra markup needed.
 
 Conventions:
 - **Date format**: `MM/DD/YYYY` (e.g. `02/23/2026`)
@@ -43,6 +45,18 @@ Conventions:
 - **Link to local PDF**: `<a href="pdf/filename.pdf" target="_blank">PDF</a>`
 - Insert new `<tr>` at the **top of the table**, right after `<table ...>` opening, so newest stays first
 - Old items get demoted to the **Archived News** `<details>` block (starts around line 386) when the top list gets too long
+
+### 1b. Update the Featured Research cards (index.html)
+
+The homepage "Featured Research" grid (6 cards, added 2026-07) lives right after the intro.
+Each card is an `<a class="featured-card">` with an image in `images/featured/`, a serif title,
+journal name + year, and optional tags (`featured-tag` = red, `featured-tag neutral` = gray).
+
+- To swap a card's image: overwrite the same filename in `images/featured/` **and bump the
+  `?v=YYYYMMDD` query string** on its `src` in `index.html` (cache buster).
+- Images should be 4:3. Diagrams with white backgrounds: pad to 4:3 with white (don't crop).
+  Photos: any ratio ≥4:3 is fine — CSS `object-fit: cover` center-crops.
+- Keep it to 6 cards; when a new flagship paper lands, replace the oldest card.
 
 ### 2. Add a publication (publications.html)
 
