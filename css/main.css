@@ -584,6 +584,13 @@ details > summary:hover { color: var(--uh-red); }
   max-height: 64px;
   width: auto;
 }
+/* Per-logo height tuning so all marks carry similar visual weight:
+   compact round seals get more height than wide wordmarks. */
+.sponsor-row img[src*="NSF.png"] { height: 62px; }
+.sponsor-row img[src*="UHlogo"] { height: 52px; }
+.sponsor-row img[src*="Icorp"] { height: 52px; }
+.sponsor-row img[src*="DOE"] { height: 52px; }
+.sponsor-row img[src*="NASA"] { height: 68px; max-height: 68px; }
 
 /* ==========================================================================
    People / member photos (legacy classes kept)
