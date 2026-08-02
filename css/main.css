@@ -314,22 +314,34 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   border-top: 1px solid var(--line);
   font-size: 14px;
   color: var(--muted);
-  padding: 28px 0 10px;
+  padding: 30px 0 10px;
   margin-top: 28px;
 }
 
 .footer-heading { font-size: 18px; margin-bottom: 12px; }
 
+.footer-name {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
 .contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;
-  line-height: 1.8;
+  line-height: 1.9;
 }
+.contact-list a { color: var(--muted); }
+.contact-list a:hover { color: var(--uh-red); }
 
 .footer-col-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .footer-col { margin-bottom: 12px; }
