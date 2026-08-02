@@ -691,8 +691,12 @@ hr.dividing-line {
   max-width: 100%;
   height: 560px;
   margin: 20px auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--line);
 }
-.video-container iframe { width: 100%; height: 100%; }
+.video-container iframe { width: 100%; height: 100%; display: block; border: 0; }
 
 /* ==========================================================================
    Research Gallery (slideshow, legacy classes restyled)
@@ -784,6 +788,59 @@ hr.dividing-line {
 @keyframes fade {
   from { opacity: 0.35; }
   to { opacity: 1; }
+}
+
+/* ==========================================================================
+   People page
+   ========================================================================== */
+
+.people-table { width: 100%; }
+.people-table > tbody > tr > td { padding-bottom: 16px; }
+.people-table td[valign="top"]:first-child { padding-right: 18px; }
+.people-table .profile-picture {
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+}
+.people-table td p:first-of-type {
+  font-family: var(--serif);
+  font-size: 17.5px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+/* ==========================================================================
+   Research page
+   ========================================================================== */
+
+.directions-grid {
+  list-style: none;
+  margin: 0 0 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+}
+.directions-grid li {
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--teal);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15.5px;
+  line-height: 1.45;
+}
+@media screen and (max-width: 620px) {
+  .directions-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   Publications page
+   ========================================================================== */
+
+.journals-strip {
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  display: block;
 }
 
 /* ==========================================================================
