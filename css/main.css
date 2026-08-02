@@ -547,15 +547,9 @@ a.featured-card:hover {
 
 .news-table tr { border-bottom: 1px solid var(--surface-alt); }
 
-/* Highlighted (bold) news rows get a UH-red accent bar */
+/* Highlighted (bold) news rows: bold text + a whisper of background tint, no accent bar */
 .news-table tr:has(b) {
   background: rgba(200, 16, 46, 0.025);
-}
-.news-table tr:has(b) td:first-child {
-  border-left: 3px solid var(--uh-red);
-}
-.news-table tr:not(:has(b)) td:first-child {
-  border-left: 3px solid transparent;
 }
 
 details > summary {
