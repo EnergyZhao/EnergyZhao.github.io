@@ -775,6 +775,97 @@ hr.dividing-line {
 }
 
 /* ==========================================================================
+   Teaching page
+   ========================================================================== */
+
+.teaching-photo {
+  display: block;
+  width: 85%;
+  margin: 6px auto 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+}
+@media screen and (max-width: 620px) {
+  .teaching-photo { width: 100%; }
+}
+
+.yt-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-bottom: 12px;
+}
+.yt-card-icon { flex: 0 0 auto; }
+.yt-card-text p { margin: 0 0 10px; }
+.yt-card-text p:last-child { margin-bottom: 0; }
+@media screen and (max-width: 620px) {
+  .yt-card { flex-direction: column; text-align: center; gap: 14px; }
+}
+
+.yt-btn {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background: #cc0000;
+  border-radius: 999px;
+  padding: 8px 20px;
+  transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+.yt-btn:hover,
+.yt-btn:visited:hover {
+  color: #ffffff;
+  background: #a30000;
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+.yt-btn:visited { color: #ffffff; }
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.course-table td {
+  padding: 11px 8px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: baseline;
+}
+.course-table tr:last-child td { border-bottom: none; }
+td.course-term {
+  width: 140px;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+td.course-name b { font-weight: 600; }
+
+.course-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal);
+  background: rgba(22, 154, 184, 0.08);
+  border: 1px solid rgba(22, 154, 184, 0.35);
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
    Collapsible project blocks (research.html)
    ========================================================================== */
 
