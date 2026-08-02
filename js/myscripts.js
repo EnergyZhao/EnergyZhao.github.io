@@ -31,7 +31,7 @@ document.getElementById("myFooter").innerHTML =
 	+"<ul class='contact-list'>"
 	+"<li><a href='https://scholar.google.com/citations?user=KuwaRycAAAAJ&hl=en' target='_blank'>Google Scholar</a></li>"
 	+"<li><a href='https://orcid.org/0000-0002-3648-6183' target='_blank'>ORCID</a></li>"
-	+"<li><a href='https://www.youtube.com/@Everything-Thermal' target='_blank'>Everything Thermal on YouTube</a></li>"
+	+"<li><a href='https://www.linkedin.com/in/gtbozhao/' target='_blank'>LinkedIn</a></li>"
 	+"<li><a href='https://uh.edu/' target='_blank'>University of Houston</a></li>"
 	+"</ul>"
 	+"</div>"
